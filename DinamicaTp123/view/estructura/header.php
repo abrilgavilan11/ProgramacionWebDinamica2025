@@ -12,15 +12,15 @@
 
                     <li class="nav-item">
                         <a class="btn btn-outline-secondary me-2"
-                            href="http://localhost/DinamicaTp123/view/TP1/index.php">Tp1</a>
+                            href="../TP1/index.php">Tp1</a>
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-outline-secondary me-2  "
-                            href="http://localhost/DinamicaTp123/view/TP2/index.php">Tp2</a>
+                            href="../TP2/index.php">Tp2</a>
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-outline-secondary me-2"
-                            href="http://localhost/DinamicaTp123/view/TP3/index.php">Tp3</a>
+                            href="../TP3/index.php">Tp3</a>
                     </li>
                 </ul>
 

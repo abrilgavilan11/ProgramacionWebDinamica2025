@@ -3,4 +3,4 @@
     $obj = new usuarioyContra();
     $string = $obj->ejercicio3();
     echo "<p>" . $string." </p>";
-echo '<a href="http://localhost/DinamicaTp123/view/TP2/index.php">Inicio</a>';
+echo '<a href="index.php">Inicio</a>';

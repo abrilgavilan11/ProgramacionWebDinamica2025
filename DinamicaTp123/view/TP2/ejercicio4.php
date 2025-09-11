@@ -19,8 +19,8 @@
     <div class="container d-flex flex-column mx-auto m-5 p-4" style="background-color: #b7e6b7ff; color: #456445ff; width: 1000px " >
 
         <div class="d-flex justify-content-between w-100">
-            <h1 style="">La pelicula introducida es</h1>
-            <a href="http://localhost/DinamicaTp123/view/TP2/index.php" style="" >
+            <h1>La pelicula introducida es</h1>
+            <a href="index.php">
                 <i class="fa-solid fa-xmark"></i></a>
         </div>
         <br>

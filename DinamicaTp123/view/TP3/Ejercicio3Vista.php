@@ -21,8 +21,8 @@ $bandera = $obj->ejercicio3();
         style="background-color: #b7e6b7ff; color: #456445ff; width: 1000px ">
 
         <div class="d-flex justify-content-between w-100">
-            <h1 style="">La pelicula introducida es</h1>
-            <a href="http://localhost/DinamicaTp123/view/TP3/index.php" style="">
+            <h1>La pelicula introducida es</h1>
+            <a href="index.php">
                 <i class="fa-solid fa-xmark"></i></a>
         </div>
         <br>
@@ -39,7 +39,7 @@ $bandera = $obj->ejercicio3();
         <?php   
             if($bandera){
                 
-                echo (" <img src='http://localhost/DinamicaTp123/view/TP3/". $_FILES['imagen']['name']. "' alt= 'Portada de la pelicula ". $metodo['titulo'] ."' class='img-fluid rounded shadow mt-3' style='max-width: 200px; height: auto'/> " );
+                echo (" <img src= ". $_FILES['imagen']['name']. " alt= 'Portada de la pelicula ". $metodo['titulo'] ."' class='img-fluid rounded shadow mt-3' style='max-width: 200px; height: auto'/> " );
             }
             else{
                 echo ' <p> <strong>Portada no cargada</strong> </p>';
