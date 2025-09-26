@@ -9,19 +9,27 @@ class AbmPersona
     private function cargarObjeto($param)
     {
         $obj = null;
-        if (array_key_exists('nroDni', $param) && array_key_exists('nombre', $param) && array_key_exists('apellido', $param)) {
+        if (
+            array_key_exists('nroDni', $param) &&
+            array_key_exists('nombre', $param) &&
+            array_key_exists('apellido', $param) &&
+            array_key_exists('fechaNac', $param) &&
+            array_key_exists('telefono', $param) &&
+            array_key_exists('domicilio', $param)
+        ) {
             $obj = new Persona();
             $obj->setear(
                 $param['nroDni'],
                 $param['apellido'],
                 $param['nombre'],
-                $param['fechaNac'] ?? null,
-                $param['telefono'] ?? null,
-                $param['domicilio'] ?? null
+                $param['fechaNac'],
+                $param['telefono'],
+                $param['domicilio']
             );
         }
         return $obj;
     }
+
 
     /**
      * Carga un objeto Persona solo con la clave (nroDni)
@@ -106,10 +114,6 @@ class AbmPersona
         if ($param != NULL) {
             if (isset($param['nroDni']))
                 $where .= " and nroDni ='" . $param['nroDni'] . "'";
-            if (isset($param['apellido']))
-                $where .= " and apellido ='" . $param['apellido'] . "'";
-            if (isset($param['nombre']))
-                $where .= " and nombre ='" . $param['nombre'] . "'";
         }
         $arreglo = Persona::listar($where);
         return $arreglo;

@@ -2,19 +2,6 @@
 include_once "vista/estructura/header.php";
 ?>
 
-<style>
-/* Efecto hover para todas las cards del menú */
-.menu-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-}
-
-.menu-card:hover {
-    transform: translateY(-8px) scale(1.05); /* Se eleva y hace un leve zoom */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-}
-</style>
-
 <div class="container mt-5">
     <h1 class="text-center mb-5">Menú Principal</h1>
 

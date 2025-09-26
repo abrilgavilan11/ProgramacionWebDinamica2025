@@ -63,7 +63,6 @@ class AbmAuto
         return $resp;
     }
 
-
     public function baja($param)
     {
         $resp = false;
@@ -94,12 +93,6 @@ class AbmAuto
         if ($param != NULL) {
             if (isset($param['patente']))
                 $where .= " and Patente ='" . $param['patente'] . "'";
-            if (isset($param['marca']))
-                $where .= " and Marca ='" . $param['marca'] . "'";
-            if (isset($param['modelo']))
-                $where .= " and Modelo =" . $param['modelo'];
-            if (isset($param['DniDuenio']))
-                $where .= " and DniDuenio ='" . $param['DniDuenio'] . "'";
         }
         $objAuto = new Auto();
         $arreglo = $objAuto->listar($where);

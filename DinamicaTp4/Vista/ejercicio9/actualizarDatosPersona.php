@@ -6,7 +6,7 @@ include_once '../estructura/header.php';
 $datos = data_submitted();
 $objAbmPersona = new AbmPersona();
 
-$mensaje = ""; // variable para centralizar el mensaje
+$mensaje = ""; 
 
 if (isset($datos['nroDni'])) {
     // Buscamos la persona por DNI
